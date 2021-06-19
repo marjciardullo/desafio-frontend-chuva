@@ -1,0 +1,54 @@
+.wrap .content .discussion .sugestao {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5C5C5C;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.wrap .content .discussion .new-topic form {
+    margin: 18px 15px 60px 18px;
+}
+
+.wrap .content .discussion .new-topic form > div  label {
+   font-size: 16px;
+   font-weight: bold;
+   color: #ED7839;
+}
+
+form > div #definir-topico {
+    width: 1000px;
+    height: 39px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+form > div #definir-topico::placeholder {
+    padding: 10px 24px 11px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+form div > textarea {
+    width: 1000px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    height: 100px;
+}
+
+form div > button {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    width: 205px;
+    height: 31px;
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px;
+    border: none;
+}
