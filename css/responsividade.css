@@ -1,0 +1,268 @@
+@media (max-width: 960px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .wrap .side-wrapper .side-navigation{
+      box-shadow: none;
+  }
+  .wrap .side-wrapper .side-navigation ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-right: 1px solid #ececec;
+    height: 100vh;
+   
+  }
+
+  ul {
+    margin-top: 35px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+  }
+
+.ul-responsive--show{
+      transform: translateX(0);
+  }
+
+  .wrap .side-wrapper .side-navigation h1,
+  .wrap .side-wrapper .side-navigation img {
+    display: none;
+  }
+
+  .wrap .content {
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .wrap .content header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .wrap .content header i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    color: #4e4e4e;
+  }
+
+  .wrap .content header img {
+    display: flex;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .wrap .content header .login-text .email-text {
+    display: none;
+  }
+
+  .wrap .content header .login-text {
+    display: none;
+  }
+
+  .wrap .content header .header-text .main-text {
+    font-size: 18px;
+  }
+
+  .wrap .content header .header-text .small-text {
+    font-size: 14px;
+  }
+
+  .wrap .content .main-content .flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 80px 10px 0px 10px;
+  }
+
+  .main-content .flex-content .btn-text p {
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ed7839;
+    margin: 0px 5px;
+  }
+
+  .wrap .content .video-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .video-content .image-content img,
+  .wrap .content .block-content,
+  .wrap .content .resume,
+  .wrap .content .discussion,
+  footer .footer-container {
+    width: 96%;
+    margin: 10px;
+  }
+
+  form > div #definir-topico {
+    width: 100%;
+  }
+
+  form > div #definir-topico::placeholder {
+    font-size: 12px;
+  }
+
+  form div > textarea {
+    width: 100%;
+  }
+
+  form div > button {
+    margin-top: 105px;
+  }
+
+  .send-topic p {
+    text-align: center;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer img {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 715px) {
+    ul {
+        margin-top: 25px;
+    }
+  .wrap .content header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .wrap .content header i {
+    display: flex;
+    margin: 10px;
+    position: static;
+    color: #4e4e4e;
+  }
+
+  .wrap .content header select {
+    display: flex;
+  }
+
+  .wrap .content header .header-text .small-text {
+    display: none;
+  }
+
+  .wrap .content header .header-text .responsive-text {
+    display: flex;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4e4e4e;
+  }
+  .wrap .content header .header-text .main-text {
+    display: none;
+  }
+  .wrap .content header .login-text .email-text {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .wrap .content header .login-text {
+    margin-top: 0;
+    margin-right: 5px;
+  }
+
+  header .login-text .welcome-text {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  header img {
+    display: flex;
+  }
+
+  .wrap .content .main-content .flex-content {
+    margin: 0;
+  }
+
+  .main-content .flex-content h1 {
+    font-size: 50%;
+    font-weight: 900;
+    color: #ed7839;
+    margin: 70px 10px 10px 10px;
+  }
+
+  .main-content .flex-content .btn {
+    margin: 0px 10px;
+  }
+
+  .wrap .content .main-content .flex-content .btn .download-btn {
+    width: 43px;
+    height: 31px;
+  }
+
+  .main-content .flex-content .btn .download-btn span {
+    display: none;
+  }
+
+  .main-content .flex-content .btn-text p {
+    align-items: flex-end;
+  }
+
+  .wrap .content .discussion .p1 {
+    margin-top: 25px;
+  }
+
+  .wrap .content .discussion .p2 {
+    padding: 30px 70px 14px;
+  }
+
+  .flex-box-content .topic-box h3 {
+    font-size: 14px;
+    padding: 17px 0px 3px 25px;
+  }
+
+  .flex-box-content .topic-box .questions p:first-of-type {
+    padding: 3px 0px 1px 25px;
+  }
+}
+
+@media (max-width: 530px) {
+    
+  .wrap .content header .login-text .email-text,
+  .wrap .content header .login-text,
+  header img {
+    display: none;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p:first-of-type {
+    margin: 0;
+  }
+
+  footer p {
+    margin-top: 10px;
+  }
+}
