@@ -94,17 +94,20 @@ document.querySelector("#new-topic-btn").addEventListener("click", () => {
 
 //Mostrar Respostas -------------------
 
-document.querySelectorAll(".topic-flex").forEach((item) => {
-  document.querySelector(".topic-answers").addEventListener("click", (e) => {
-    console.log(e.target);
-    const commentBox = document.querySelector(".comment-box");
-    commentBox.classList.toggle("comment-box--show");
-  });
-});
+document.querySelectorAll(".topic-answers").forEach(item =>
+  item.addEventListener("click", () => {
+    const comments = document.querySelectorAll(".comment-box");
+    comments.forEach(i => {
+      console.log(i)
+      i.classList.toggle("comment-content--show");
+  })
+  }));
 
 //Menu responsivo -------------------
 
 const ul = document.querySelector("ul");
-const menuIcon = document.querySelector("#bars").addEventListener("click", () => {
+const menuIcon = document
+  .querySelector("#bars")
+  .addEventListener("click", () => {
     ul.classList.toggle("ul-responsive--show");
-});
+  });
