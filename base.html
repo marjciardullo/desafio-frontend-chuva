@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/criar-topico.css" />
+    <link rel="stylesheet" href="./css/criar-novo-topico.css" />
+    <link rel="stylesheet" href="./css/responsividade.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -15,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    
 
     <title>SLACA 2019</title>
   </head>
@@ -38,7 +41,9 @@
       </div>
       <div class="content">
         <header>
+          <i class="fas fa-bars" id="bars"></i>
           <div class="header-text">
+            <p class="responsive-text">SLACA 2019</p>
             <p class="small-text">
               Anais do Simpósio Latino Americano de Ciências de Alimentos
             </p>
@@ -47,9 +52,11 @@
             </p>
             <p class="small-text">ISSN: 1234-5678</p>
           </div>
+          <div class="select-box">
           <select>
             <option value="0">PT, BR</option>
           </select>
+          </div>
           <div class="login-text">
             <p class="welcome-text">Bem-vindo!</p>
             <p class="email-text">alguem12@galoascience.com</p>
@@ -65,7 +72,7 @@
               entre 09 e 15 anos, do município de Campinas/SP
             </h1>
             <div class="btn">
-              <button class="download-btn">
+              <button class="download-btn" id="btn-download">
                 <img src="./imagens/.png" /><span>Donwload</span>
               </button>
               <button><img src="./imagens/star.png" /></button>
@@ -84,6 +91,7 @@
           <div class="block-content">
             <div class="details-text">
               <h3>Detalhes</h3>
+
             </div>
             <div class="description-text">
               <p>Tipo de Apresentação: <span>Pôster</span></p>
@@ -114,21 +122,64 @@
           <div class="resume-text">
             <h2>Resumo</h2>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus
-            felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce
-            auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl,
-            vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut
-            viverra lorem vestibulum ut. Phasellus condimentum orci id leo
-            condimentum lobortis et non lorem. Sed id nisl metus. Quisque
-            sollicitudin ligula in sapien scelerisque, ac gravida eros
-            vestibulum Phasellus condimentum orci id leo condimentum lobortis et
-            non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien
-            scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl,
-            vel aliquet enim accumsan sit ametl accumsant...
-            <a href="./resumo-expandido.html">ver mais</a>
-          </p>
+          <div class="read-more-container">
+            <div class="container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus vitae turpis auctor, mollis felis ut, commodo turpis.
+                Phasellus felis mauris, egestas eget cursus et, iaculis quis
+                lacus. Fusce auctor eros sed magna ultricies gravida. Etiam
+                aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec
+                finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus
+                condimentum orci id leo condimentum lobortis et non lorem. Sed
+                id nisl metus. Quisque sollicitudin ligula in sapien
+                scelerisque, ac gravida eros vestibulum Phasellus condimentum
+                orci id leo condimentum lobortis et non lorem. Sed id nisl
+                metus. Quisque sollicitudin ligula in sapien scelerisque, ac
+                gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet
+                enim accumsan sit ametl accumsant
+                <span class="read-more-text">
+                  <br />
+                  <br />
+                  Fusce vitae luctus dui. Donec id euismod mauris, in volutpat
+                  urna. Proin dapibus consequat feugiat. Proin dictum justo
+                  arcu, quis vestibulum augue lacinia quis. Sed dignissim dui
+                  nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
+                  Maecenas dolor enim, tincidunt id elit non, suscipit interdum
+                  turpis. Etiam finibus urna libero, eget interdum eros volutpat
+                  ullamcorper. Pellentesque et pretium lorem. Aenean interdum
+                  quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra
+                  libero non, ornare enim. Etiam in laoreet odio.
+                  <br />
+                  <br />
+                  Praesent velit dolor, dignissim sed quam ac, efficitur porta
+                  justo. Pellentesque porta pharetra felis ut hendrerit. Nulla
+                  facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam.
+                  Maecenas dapibus luctus dolor at viverra. Duis nec fringilla
+                  libero. Duis risus nibh, viverra ac orci nec, iaculis dictum
+                  sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec
+                  varius ipsum purus, ut vehicula purus placerat vitae. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.
+                  <br />
+                  <br />
+                  Nam eget tristique elit, at fermentum tellus. Mauris
+                  scelerisque ligula id eleifend feugiat. Donec eleifend
+                  vehicula sem nec dapibus. Integer scelerisque neque dui, in
+                  lacinia erat molestie eu. Phasellus maximus dui eget lacus
+                  porta tempor. Ut ex nibh, dignissim quis purus semper,
+                  efficitur facilisis turpis. Praesent blandit elementum
+                  ultricies. Aliquam sit amet enim sit amet nulla pulvinar
+                  lobortis consectetur non odio. Phasellus at lacus hendrerit,
+                  vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque
+                  orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit
+                  eleifend massa, eu posuere mauris odio id odio. Morbi eu
+                  libero luctus, consectetur lorem vel, interdum sapien. Aenean
+                  in porta arcu. Maecenas eu maximus massa.
+                </span>
+              </p>
+              <a class="read-more-btn">veja mais</a>
+            </div>
+          </div>
         </section>
 
         <section class="discussion">
@@ -137,6 +188,42 @@
               <h2>Discussões</h2>
             </div>
             <div class="flex-box-content">
+              <div class="send-topic">
+                <h3>Seu tópico foi enviado com sucesso! :D</h3>
+                <p>
+                  Agradecemos por sua contribuição, uma notificação será enviada
+                  ao seu email assim que seu tópico for respondido!
+                </p>
+                <a href="#">Descubra outros trabalhos!</a>
+                <button id="new-topic-btn">criar novo tópico</button>
+              </div>
+              <div class="form-content">
+                <h3 class="p1 sugestao">
+                  Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+                  autores!
+                </h3>
+
+                <div class="new-topic">
+                  <form action="#" method="POST">
+                    <div>
+                      <label for="assunto">Assunto</label><br />
+                      <input
+                        type="text"
+                        id="definir-topico"
+                        placeholder="Defina um tópico sucinto para notificar os autores..."
+                      />
+                    </div>
+
+                    <div>
+                      <label for="conteudo">Conteúdo</label><br />
+                      <div class="text-and-button">
+                        <textarea id="msg"></textarea>
+                        <button type="button" id="topic-btn">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
               <div class="box-content">
                 <p class="p1">
                   Compartilhe suas ideias ou dúvidas com os autores!
@@ -158,6 +245,7 @@
                   <img src="./imagens/icon - criar.png" />criar tópico
                 </button>
               </div>
+
               <div class="topic-box">
                 <div class="questions">
                   <h3>Assunto da pergunta aparece aqui</h3>
@@ -174,7 +262,7 @@
                   <a href="#"><img src="./imagens/mais informações.png" /></a>
                   <button><img src="./imagens/green apples 22.png" /></button>
                   <p>1 like</p>
-                  <p>1 resposta</p>
+                  <p class="topic-answers">1 resposta</p>
                 </div>
 
                 <div class="comment-box">
@@ -206,22 +294,56 @@
                     processo...
                   </p>
                 </div>
+
                 <div class="topic-flex">
                   <a href="#"><img src="./imagens/mais informações.png" /></a>
                   <button><img src="./imagens/green apples 22.png" /></button>
                   <p>1 like</p>
-                  <p>1 resposta</p>
+                  <p class="topic-answers">1 resposta</p>
+                </div>
+                
+                <div class="comment-box">
+                  <div id="comment-content">
+                    <div class="comment-title">
+                      <p>Adriano da Silva</p>
+                    </div>
+
+                    <p>
+                      Resposta do autor é aqui. Relato inscreve-se no campo da
+                      análise da dimensão e impacto de processo formativo
+                      situado impacto de processo formativo processo resente
+                      relato inscreve-se no campo da análise da dimensão e
+                      impacto de processo formativo situado impacto de processo
+                      formativo processo.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <footer>
-          <div class="container">
-            <img src="./imagens/imagem - footer.png" />
+          <div class="footer-container">
+            <img src="./imagens/galoa.png"/>
+            <div class="footer-texts">
+              <p>
+                <span
+                  >Preservar a memória do evento e ampliar o acesso ao
+                  conhecimento científico</span
+                >
+                gerado em eventos é a razão de ser da plataforma Galoá
+                Proceedings.
+              </p>
+              <p>
+                Os trabalhos aqui têm maior alcance e ficam disponíveis para
+                toda a comunidade científica, mantendo aceso o debate científico
+                formentado pelos encontros e aumentando o impacto do evento.
+              </p>
+            </div>
           </div>
         </footer>
       </div>
     </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
