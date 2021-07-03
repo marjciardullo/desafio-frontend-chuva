@@ -1,2 +1,2 @@
 # desafio-frontend-chuva
-Desafio de Front-End utilizando HTML e CSS
+Desafio de Front-End utilizando HTML e CSS e Javascript.
